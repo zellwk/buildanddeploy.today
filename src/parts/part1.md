@@ -1,5 +1,5 @@
 ---
-setup: import { Markdown } from 'Astro/components'
+setup: import { Markdown } from 'astro/components'
 ---
 
 The most important thing you need to do as a developer is to put up your website on the internet. Once you can do this, the world becomes your oyster. Your possibilities open up.
