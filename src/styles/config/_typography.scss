@@ -1,0 +1,17 @@
+@use 'sass:math';
+
+$font-family: Neufreit, sans-serif;
+$line-height: 1.5;
+$scale: 1.2;
+
+@function pxToPercent($value) {
+  @return math.div($value, 16) * 100%;
+}
+
+@function fz($exponent) {
+  @return math.pow($scale, $exponent) * 1rem;
+}
+
+@function ru($num) {
+  @return $line-height * $num * 0.8rem;
+}

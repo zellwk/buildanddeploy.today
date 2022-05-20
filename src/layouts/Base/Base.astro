@@ -1,0 +1,18 @@
+---
+import '../../styles/styles.scss' // Imports styles
+import Head from './Head.astro'
+const { title, description, socialImage } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <Head title={title} description={description} socialImage={socialImage}></Head>
+  </head>
+  <body>
+    <main>
+      <slot>
+        <!-- Body Content -->
+        Hello world. You haven't included anything in this component yet.
+      </slot>
+    </main>
+  </body>
+</html>

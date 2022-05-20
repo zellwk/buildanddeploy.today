@@ -1,0 +1,73 @@
+@use 'config/typography' as *;
+
+html {
+  font-size: pxToPercent(18);
+  font-family: $font-family;
+  line-height: $line-height;
+
+  @media screen and (min-width: 1000px) {
+    font-size: pxToPercent(20);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: fz(5);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: fz(4);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: fz(2);
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: fz(-1);
+}
+
+:where(h1, h2, h3, h4) + * {
+  margin-top: ru(1);
+}
+
+p + p {
+  margin-top: 0.8em;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:visited:not(.button) {
+  color: var(--main-color);
+}
+
+a:hover:not(.button) {
+  color: var(--secondary-color);
+  transition: color 0.25s ease-out;
+}
+
+pre {
+  padding: ru(1);
+  border-radius: ru(0.5);
+}
+
+code {
+  font-family: Monaco;
+  font-size: fz(-1);
+  line-height: $line-height;
+}

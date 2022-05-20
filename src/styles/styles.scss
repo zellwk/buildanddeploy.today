@@ -1,0 +1,21 @@
+@use 'base/reset';
+@use 'config/typography' as *;
+@use 'typography1';
+@use 'longform';
+@use 'utilities';
+
+body {
+  background-color: #fafafa;
+}
+
+main {
+  margin-top: ru(3);
+  padding-bottom: ru(3);
+}
+
+.button {
+  @extend button;
+  display: inline-block;
+  background-color: navy;
+  color: white;
+}

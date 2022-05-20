@@ -1,0 +1,33 @@
+---
+import Page from '../layouts/Page.astro';
+import Vimeo from '../components/Vimeo.astro'
+import { Markdown } from 'Astro/components'
+import { ContentMap } from '../utilities/contentMap';
+
+const parts = await Astro.glob('../parts/*.md')
+const Content = ContentMap(parts)
+
+const title = "Bulid and Deploy"
+const description = "The easiest way to build a website and put it up on the internet — by using Astro, Git, and Netlify"
+---
+
+<Page title={title} description={description}>
+  <div class="wrap">
+    <div>
+      <h1 class="margin-auto text-center" style="max-width: 14em">
+        The easiest way to build a website and put it up on the internet
+      </h1>
+
+      <div class="longform margin-auto">
+        <Vimeo videoTitle="Introduction to the course" videoId="711365095" unlistedHash="334ab583c3"></Vimeo>
+
+        <Content.part1></Content.part1>
+        <Content.part2></Content.part2>
+        <Content.part3></Content.part3>
+        <Content.part4></Content.part4>
+      </div>
+    </div>
+
+
+  </div>
+</Page>

@@ -1,0 +1,45 @@
+@use 'config/typography' as *;
+
+.longform {
+  max-width: 35rem;
+
+  *
+    + :where(h1, h2, h3, h4, h5, h6, p, img, ol, ul, div, svg, figure, video, embed, iframe, pre, .button) {
+    margin-top: ru(1);
+  }
+
+  h1 {
+    margin-top: ru(4);
+  }
+
+  h2,
+  h3 {
+    margin-top: ru(2);
+  }
+
+  ul,
+  ol {
+    padding: 0;
+    > :where(ul, ol) {
+      padding-left: ru(1);
+    }
+  }
+
+  ul li {
+    list-style-type: disc;
+  }
+
+  ol li {
+    list-style: decimal;
+  }
+
+  li + li,
+  li > :where(ul, ol) {
+    margin-top: ru(0.2);
+  }
+
+  li {
+    list-style-position: outside;
+    margin-left: ru(1.5);
+  }
+}
