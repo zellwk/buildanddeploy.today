@@ -1,4 +1,5 @@
 import path from 'path'
+
 export function ContentMap (array) {
   const obj = {}
   for (const item of array) {

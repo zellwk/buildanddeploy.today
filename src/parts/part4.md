@@ -1,3 +1,7 @@
+---
+setup: import WaitingList from '../components/CTA/WaitingList.astro'
+---
+
 # Frequently Asked Questions
 
 ### When will registration end?
@@ -13,10 +17,6 @@ Here's a link to join the workshop series
 _YES. The workshop will be recorded_. We will put the recording up a couple of days after the live session. You can watch the replays anytime. You also get to keep the replays for as long as you want to. So you don't have to worry about making time for all 8 sessions in your calendar.
 
 Attend what you can, and watch the rest on replay!
-
-### Can I get a discount since the exchange rate is bad for my country?
-
-No. We are not doing any further discounts. \$49 for 8 workshops is already a HUGE offer.
 
 ### What's the catch? Why make it so cheap?
 
@@ -34,16 +34,16 @@ I'll try to cover your questions as much as I can over the next three days.
 
 That's it for the FAQ!
 
-<a href="https://store.zellwk.com/build-and-deploy/" class="button">Join Build and Deploy</a>
-
 I'm pumped to show you my Static Site Generator system :)
 
-By the way, I don't think you'll be able to find another workshop that gives you so much explosive possibility and power at such a low price point. **This is my gift to you.**
+<WaitingList />
+
+<!-- By the way, I don't think you'll be able to find another workshop that gives you so much explosive possibility and power at such a low price point. **This is my gift to you.**
 
 I hope you take it.
 
 Can’t wait to see you.
 
-If you have any questions, feel free to [reach out](https://zellwk.com/contact). I'll try to answer every question you have.
+If you have any questions, feel free to [reach out](https://zellwk.com/contact). I'll try to answer every question you have. -->
 
 <p>Stay awesome, <br>Zell</p>

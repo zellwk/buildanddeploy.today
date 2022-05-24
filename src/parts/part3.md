@@ -1,5 +1,7 @@
 ---
-setup: import Vimeo from '../components/Vimeo.astro'
+setup: |
+  import Vimeo from '../components/Vimeo.astro'
+  import WaitingList from '../components/CTA/WaitingList.astro'
 ---
 
 <h1 class="margin-auto text-center">
@@ -38,7 +40,7 @@ By the end of this series of workshops, you will have enough knowledge about Sta
 - **Session 7:** Advanced Astro & Netlify stuff
 - **Session 8:** To be determined
 
-## Pricing information — what you've been waiting for
+<!-- ## Pricing information — what you've been waiting for
 
 **How much would one normally charge for 8 workshops?**
 
@@ -68,6 +70,6 @@ That's why I'm selling it at such a low price.
 
 Are you interested?
 
-If you are, you can register for the series of workshops here.
+If you are, you can register for the series of workshops here. -->
 
-<a href="https://store.zellwk.com/build-and-deploy/" class="button">Join Build and Deploy</a>
+<WaitingList />
